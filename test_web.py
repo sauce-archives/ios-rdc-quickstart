@@ -3,16 +3,16 @@ from sauce_helpers import (on_platforms,
 
 PLATFORMS = [
     {
-      "browserName": "Safari"
-      "deviceName": "iPhone 6 Device",
-      "platformName": "iOS",
-      "platformVersion": "8.4"
+        "browserName": "Safari",
+        "deviceName": "iPhone 6 Device",
+        "platformName": "iOS",
+        "platformVersion": "8.4"
     },
     {
-      "browserName": "Safari"
-      "deviceName": "iPhone 6", # Simulator. Because it doesn't say "Device"
-      "platformName": "iOS",
-      "platformVersion": "8.4"
+        "browserName": "Safari",
+        "deviceName": "iPhone 6",  # Simulator. Because it doesn't say "Device"
+        "platformName": "iOS",
+        "platformVersion": "8.4"
     }
 ]
 

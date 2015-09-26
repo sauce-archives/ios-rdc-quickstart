@@ -49,6 +49,7 @@ class SauceTest(unittest.TestCase):
         print msg % (HOST, self.driver.session_id)
         self.driver.quit()
 
+
 # This creates a test with appropriate driver for an iOS app
 # The test *must* have an "app" property defined, with the path
 # to the app on the filesystem.
@@ -57,8 +58,8 @@ class SauceIosRealDeviceAppTest(SauceTest):
         # When using the iOS Real Device Cloud, we must use an app that
         # is already uploaded to the Sauce Storage API. This is indicated
         # by a URL that starts with 'sauce-storage:'
-        if not 'app' in self.desired_capabilities
-            raise Exception("Test must have 'app' property, a 'sauce-storage:' URL")
+        if 'app' not in self.desired_capabilities:
+            raise Exception("Test must have 'app' in desired capabilities, a 'sauce-storage:' URL")
         app = self.desired_capabilities['app']
         if not app.startswith('sauce-storage:'):
             msg = ("Invalid app: '{}'. For Sauce Labs iOS Real Device tests, "
