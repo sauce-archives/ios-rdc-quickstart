@@ -30,25 +30,11 @@ def on_platforms(platforms):
             module[name] = new.classobj(name, (base_class,), d)
     return decorator
 
-# This creates a test with appropriate driver for an iOS app
-# The test *must* have an "app" property defined, with the path
-# to the app on the filesystem.
-class SauceIosRealDeviceAppTest(unittest.TestCase):
+
+class SauceTest(unittest.TestCase):
     def setUp(self):
         # set a name for the test
         self.desired_capabilities['name'] = self.id()
-
-        # When using the iOS Real Device Cloud, we must use an app that
-        # is already uploaded to the Sauce Storage API. This is indicated
-        # by a URL that starts with 'sauce-storage:'
-        if not hasattr(self, 'app'):
-            raise Exception("Test must have 'app' property, a 'sauce-storage:' URL")
-        app = self.app
-        if not app.startswith('sauce-storage:'):
-            msg = ("Invalid app: '{}'. For Sauce Labs iOS Real Device tests, "
-                   "app must be a 'sauce-storage:' URL")
-            raise Exception(msg.format(app))
-        self.desired_capabilities['app'] = app
 
         # initialize test driver
         sauce_url = "http://%s:%s@%s/wd/hub"
@@ -57,9 +43,26 @@ class SauceIosRealDeviceAppTest(unittest.TestCase):
             desired_capabilities=self.desired_capabilities,
             command_executor=command_executor
         )
-        self.driver.implicitly_wait(30)
 
     def tearDown(self):
         msg = "Link to your job: https://%s/jobs/%s"
         print msg % (HOST, self.driver.session_id)
         self.driver.quit()
+
+# This creates a test with appropriate driver for an iOS app
+# The test *must* have an "app" property defined, with the path
+# to the app on the filesystem.
+class SauceIosRealDeviceAppTest(SauceTest):
+    def setUp(self):
+        # When using the iOS Real Device Cloud, we must use an app that
+        # is already uploaded to the Sauce Storage API. This is indicated
+        # by a URL that starts with 'sauce-storage:'
+        if not 'app' in self.desired_capabilities
+            raise Exception("Test must have 'app' property, a 'sauce-storage:' URL")
+        app = self.desired_capabilities['app']
+        if not app.startswith('sauce-storage:'):
+            msg = ("Invalid app: '{}'. For Sauce Labs iOS Real Device tests, "
+                   "app must be a 'sauce-storage:' URL")
+            raise Exception(msg.format(app))
+
+        super(SauceIosRealDeviceAppTest, self).setUp()
