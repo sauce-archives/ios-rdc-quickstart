@@ -83,7 +83,7 @@ The only difference is that instead of saying `"deviceName": "iPhone 6"`, you us
 
 And that's just about it. There isn't much that's different for a web test between platforms.
 
-The one thing to watch out for is that, as of September 2015, we haven't yet released Sauce Connect for iOS 
+The one thing to watch out for is that, as of September 2015, we haven't yet released [Sauce Connect](https://docs.saucelabs.com/reference/sauce-connect/) for iOS 
 Real Devices. But it's on the way! Check with Sauce Labs for updates.
 
 ### App tests
