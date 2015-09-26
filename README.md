@@ -129,7 +129,7 @@ easy with the helpers in this package. All you have to do in the capabilities is
 
 If you want to upload the app yourself ahead of time, the `saucestorage` helper library, included here, could be of use. Or, 
 see the [Sauce Storage API documentation](https://docs.saucelabs.com/reference/rest-api/#temporary-storage). Just make sure, once
-you've uploaded the app, that you use a `sauce-storage:` URL, like `"app": "sauce-storage:your_app.zip"`.
+you've uploaded the app, that you use a `sauce-storage:` URL. So the test capabilities would have a line like `"app": "sauce-storage:your_app.zip"`.
 
 
 #### Provisioning
