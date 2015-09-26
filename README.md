@@ -95,7 +95,7 @@ one button and checks if the view has changed.
 
 You specify a real device in your capabilities just like the web test - `"deviceName": "iPhone 6 Device"`. 
 
-You put the app in `"app"`, but there are two things to watch out for:
+You put the app in `"app"`, but there are a few things to watch out for:
 
 #### Building
 
