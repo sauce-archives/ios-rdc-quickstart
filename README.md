@@ -108,7 +108,11 @@ We can't go into a full discussion of how to compile iOS apps, but here are some
   use that as your app file. Here's where to start in Apple's documentation: 
   * [XCode Overview: Run Your App](https://developer.apple.com/library/ios/documentation/ToolsLanguages/Conceptual/Xcode_Overview/RunYourApp.html)_ 
   * [XCode Help: Archiving Your Application](https://developer.apple.com/library/ios/recipes/xcode_help-scheme_editor/Articles/SchemeArchive.html) 
-* If you are building with the command-line tool, `xcodebuild`, the arguments should include `-arch armv7 -sdk iphoneos`. This StackOverflow post, 
+* If you are building with the command-line tool, `xcodebuild`, the arguments should include:
+
+    -arch armv7 -sdk iphoneos
+
+  This StackOverflow post, 
   [xcodebuild simulator or device?](http://stackoverflow.com/questions/5010062/xcodebuild-simulator-or-device) may also help.
 
 #### Uploading
