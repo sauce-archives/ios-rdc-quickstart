@@ -120,15 +120,17 @@ We can't go into a full discussion of how to compile iOS apps, but here are some
 This is the biggest difference from simulator tests. You have to upload a real device iOS app to 
 [Sauce Storage](https://support.saucelabs.com/customer/portal/articles/2018312-uploading-apps-to-sauce-storage) first.
 
-Sauce Storage is a convenient place to store files that your tests will need. Rather than waste time and bandwidth
-transferring the file over to us for every test, you can just upload it to a secure, private area that only your tests can access.
+Sauce Storage is a convenient place to temporarily store files that your tests will need. Rather than waste time and bandwidth
+transferring the file over to us for every test, you can just upload it to us once, in a secure, private area.
 
-For other kinds of tests, Sauce Storage is optional, but for the iOS Real Device Cloud, it is required. However, we've made it 
-extra easy with the helpers in this package. All you have to do in the capabilities is to specify the app as 
-`sauce_storage_upload("your_app.zip")` and you're done.
+For most tests, Sauce Storage is optional, but for the iOS Real Device Cloud, it is required. However, we've made it 
+easy with the helpers in this package. All you have to do in the capabilities is to specify the app as 
+`"app": sauce_storage_upload("your_app.zip")` and you're done.
 
-If you want to upload the app yourself ahead of time, simply upload it and specify your app with a "sauce-storage" URL, like 
-`"app": "sauce-storage:your_app.zip"`
+If you want to upload the app yourself ahead of time, the `saucestorage` helper library, included here, could be of use. Or, 
+see the [Sauce Storage API documentation](https://docs.saucelabs.com/reference/rest-api/#temporary-storage). Just make sure, once
+you've uploaded the app, that you use a `sauce-storage:` URL, like `"app": "sauce-storage:your_app.zip"`.
+
 
 #### Provisioning
 
