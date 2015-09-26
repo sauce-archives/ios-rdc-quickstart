@@ -135,3 +135,8 @@ If you want to upload the app yourself ahead of time, simply upload it and speci
 And here's a thing *not* to watch out for. You may already be aware that iOS apps in development don't work on just any iPhone or iPad.
 In Apple parlance, the apps need to be signed and provisioned for a set of devices. So you may be wondering how we can install
 your apps on our devices and test them. But you don't need to worry; we've taken care of that! Just upload the app and it will work. 
+
+## Where to find out more
+
+We're still producing supporting materials for the iOS Real Device Cloud, so if you have any questions contact [Jack Moxon](mailto:jack@saucelabs.com) 
+or [Neil Manvar](mailto:neil@saucelabs.com).
