@@ -127,6 +127,9 @@ For other kinds of tests, Sauce Storage is optional, but for the iOS Real Device
 extra easy with the helpers in this package. All you have to do in the capabilities is to specify the app as 
 `sauce_storage_upload("your_app.zip")` and you're done.
 
+If you want to upload the app yourself ahead of time, simply upload it and specify your app with a "sauce-storage" URL, like 
+`"app": "sauce-storage:your_app.zip"`
+
 #### Provisioning
 
 And here's a thing *not* to watch out for. You may already be aware that iOS apps in development don't work on just any iPhone or iPad.
