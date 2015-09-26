@@ -99,7 +99,7 @@ You put the app in `"app"`, but there are a few things to watch out for:
 
 #### Building
 
-The app has to be compiled for an iOS real device.** Up till now you've probably only been uploading simulator apps to Sauce Labs. If
+The app has to be compiled for an iOS real device. Up till now you've probably only been uploading simulator apps to Sauce Labs. If
 you upload a simulator app, you'll get a confusing error message. (We're working on that!)
 
 We can't go into a full discussion of how to compile iOS apps, but here are some tips to get you started:
