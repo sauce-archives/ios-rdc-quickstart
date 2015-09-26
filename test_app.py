@@ -1,6 +1,6 @@
-from sauce_helpers import (on_platforms,
-                           sauce_storage_upload,
-                           SauceIosRealDeviceAppTest)
+from helpers import (on_platforms,
+                     sauce_storage_upload,
+                     SauceIosRealDeviceAppTest)
 
 IOS_REAL_DEVICES = [
     # You could have many different iOS devices in here,

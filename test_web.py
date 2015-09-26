@@ -1,5 +1,4 @@
-from sauce_helpers import (on_platforms,
-                           SauceTest)
+from helpers import on_platforms, SauceTest
 
 PLATFORMS = [
     {
