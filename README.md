@@ -136,7 +136,9 @@ you've uploaded the app, that you use a `sauce-storage:` URL. So the test capabi
 
 And here's a thing *not* to watch out for. You may already be aware that iOS apps in development don't work on just any iPhone or iPad.
 In Apple parlance, the apps need to be signed and provisioned for a set of devices. So you may be wondering how we can install
-your apps on our devices and test them. But you don't need to worry; we've taken care of that! Just upload the app and it will work. 
+your apps on our devices and test them. But you don't need to worry; we've taken care of that! Just upload the app and it will work.
+
+TL;DR: If you can run it on an iOS real device, so can we. 
 
 ## Where to find out more
 
