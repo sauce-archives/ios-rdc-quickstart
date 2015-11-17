@@ -149,5 +149,5 @@ TL;DR: If you can run it on an iOS real device, so can we.
 
 ## Where to find out more
 
-We're still producing supporting materials for the iOS Real Device Cloud, so if you have any questions contact [Jack Moxon](mailto:jack@saucelabs.com) 
+We're still producing supporting materials for the iOS Real Device Cloud, so if you have any questions contact [Chiarng Lin](mailto:chiarng@saucelabs.com) 
 or [Neil Manvar](mailto:neil@saucelabs.com).
