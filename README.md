@@ -99,11 +99,12 @@ You put the app in `"app"`, but there are a few things to watch out for:
 
 #### Building
 
-The app has to be compiled for an iOS real device. Up till now you've probably only been uploading simulator apps to Sauce Labs. If
-you upload a simulator app, you'll get a confusing error message. (We're working on that!)
+Up till now you've probably only been uploading simulator apps to Sauce Labs. But if you run your app on a real iOS device, it 
+has to be compiled and archived specially for one.
 
 We can't go into a full discussion of how to compile iOS apps, but here are some tips to get you started:
 
+* You can make a `.app` directory or an `.ipa`. (See the **Uploading** section).
 * If you are using Apple's development IDE, XCode, you will have to create a "scheme" which archives the application to a file. Then
   use that as your app file. Here's where to start in Apple's documentation: 
   * [XCode Overview: Run Your App](https://developer.apple.com/library/ios/documentation/ToolsLanguages/Conceptual/Xcode_Overview/RunYourApp.html)_ 
@@ -115,9 +116,15 @@ We can't go into a full discussion of how to compile iOS apps, but here are some
   This StackOverflow post, 
   [xcodebuild simulator or device?](http://stackoverflow.com/questions/5010062/xcodebuild-simulator-or-device) may also help.
 
+
 #### Uploading
 
-This is the biggest difference from simulator tests. You have to upload a real device iOS app to 
+Sauce Labs can accept your app in two formats.
+
+  * As an IPA archive, whose filename must end in `.ipa`; or
+  * A zipped `.app` directory, whose filename must end in `.zip`.
+
+The big difference from simulator tests is that you have to upload a real device iOS app to 
 [Sauce Storage](https://support.saucelabs.com/customer/portal/articles/2018312-uploading-apps-to-sauce-storage) first.
 
 Sauce Storage is a convenient place to temporarily store files that your tests will need. Rather than waste time and bandwidth
