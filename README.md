@@ -132,7 +132,7 @@ Sauce Labs can accept your app in two formats.
 
 The big difference from simulator tests is that you have to upload a real device iOS app to 
 [Sauce Storage](https://support.saucelabs.com/customer/portal/articles/2018312-uploading-apps-to-sauce-storage) first. And
-then, to test the app you just uploaded, the capabilities for the test use a `sauce-storage:` URL as the `app` property.
+then, to test the app you just uploaded, use a `sauce-storage:` URL as the `app` property in the capabilities.
 
 For instance, if your app is called `your_app.zip`, you would upload it to Sauce Storage, and then in the capabilities for 
 your test you would use `app: "sauce-storage:your_app.zip"`.
