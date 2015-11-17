@@ -4,14 +4,15 @@ We're proud to present to your our new Real Device Cloud. Now, you
 can test your apps and websites on actual iOS devices like the iPhone 6. 
 
 We can do it because we've hooked them up to the cloud, and made them
-work just like the tests you used to work on simulators... almost.
+work just like the tests on simulators... almost.
 
 So here are a few things you need to know first:
 
 ## Getting started
 
-You'll need to be familiar with running scripts on the command line, and have
-Python 2.x or better installed.
+Sauce Labs works with Selenium libraries in any language, but the examples here
+are (for now) just in Python. So you'll need to be familiar with running scripts 
+on the command line, and have Python 2.x or better installed.
 
 First you'll need a couple of environment variables. 
 
