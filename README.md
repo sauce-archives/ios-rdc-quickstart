@@ -131,18 +131,19 @@ Sauce Labs can accept your app in two formats.
   * A zipped `.app` directory, whose filename must end in `.zip`.
 
 The big difference from simulator tests is that you have to upload a real device iOS app to 
-[Sauce Storage](https://support.saucelabs.com/customer/portal/articles/2018312-uploading-apps-to-sauce-storage) first.
+[Sauce Storage](https://support.saucelabs.com/customer/portal/articles/2018312-uploading-apps-to-sauce-storage) first. And
+then, to get Sauce to use the app you just uploaded, you use a `sauce-storage:` URL as the `app` property in your `capabilities'. 
 
 Sauce Storage is a convenient place to temporarily store files that your tests will need. Rather than waste time and bandwidth
 transferring the file over to us for every test, you can just upload it to us once, in a secure, private area.
 
-For most tests, Sauce Storage is optional, but for the iOS Real Device Cloud, it is required. However, we've made it 
-easy with the helpers in this package. All you have to do in the capabilities is to specify the app as 
-`"app": sauce_storage_upload("your_app.zip")` and you're done.
-
 If you want to upload the app yourself ahead of time, the `saucestorage` helper library, included here, could be of use. Or, 
-see the [Sauce Storage API documentation](https://docs.saucelabs.com/reference/rest-api/#temporary-storage). Just make sure, once
-you've uploaded the app, that you use a `sauce-storage:` URL. So the test capabilities would have a line like `"app": "sauce-storage:your_app.zip"`.
+use the tool of your choice (maybe `curl`) to upload it. See the [Sauce Storage API documentation](https://docs.saucelabs.com/reference/rest-api/#temporary-storage). 
+
+Just make sure, once you've uploaded the app, that you use a `sauce-storage:` URL. So the test capabilities would have a line like `"app": "sauce-storage:your_app.zip"`.
+
+If you write tests in Python, we've made it extra easy with the helpers in this package. All you have to do in the capabilities is to specify the app on the 
+filesystem like this: `"app": sauce_storage_upload("path/to/your_app.zip")` and the app will upload automatically.
 
 
 #### Provisioning
