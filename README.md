@@ -1,14 +1,15 @@
 # Quick Start to the Sauce Labs iOS Real Device Cloud
 
-We're proud to present to you our new Real Device Cloud. Now, you
+We're proud to present the new Sauce Labs Real Device Cloud. Now, you
 can test your apps and websites on actual iOS devices like the iPhone 6. 
 
-We can do it because we've hooked them up to the cloud, and made them
-work just like iOS simulators... almost.
+We can do it because we've hooked real iOS devices up to the cloud, and made them
+run your tests just like iOS simulators... almost.
 
-So here are a few things you need to know first:
+To get you started, we've put together some sample tests, with a sample app, that you can try -- right now --
+with your own Sauce Labs account.
 
-## Getting started
+## Running the example tests
 
 Sauce Labs works with Selenium libraries in any language, but the examples here
 are (for now) just in Python. So you'll need to be familiar with running scripts 
@@ -53,13 +54,13 @@ set SAUCE_ACCESS_KEY=your_access_key
 
 You might want to add this to your default environment variables.
 
-## Install test libraries
+### Install test libraries
 
 If you use Sauce already, you almost certainly have this stuff, but in case you are 
 on a fresh machine: in the shell, enter the directory where you installed these files.
 And then, install dependencies with `pip install -r requirements.txt`.
 
-## How to run the tests
+### How to run the tests
 
 Log into your account on Sauce Labs. It's not necessary, but it's just interesting to watch the tests
 progress.
@@ -70,7 +71,11 @@ In a shell, enter the directory containing the test files. To run the tests, jus
 see anything, but soon you'll see tests running, in your shell and in the web interface for your account!
 
 
+
 ## How to write your own tests
+
+Hopefully that worked (if it didn't, see the contact info below) and you're interested in writing your own
+tests now. Let's have a look at these example tests for clues about how to write your own.
 
 ### Web tests
 
@@ -146,7 +151,7 @@ And here's a thing *not* to watch out for. You may already be aware that iOS app
 In Apple parlance, the apps need to be signed and provisioned for a set of devices. So you may be wondering how we can install
 your apps on our devices and test them. But you don't need to worry; we've taken care of that! Just upload the app and it will work.
 
-TL;DR: If you can run it on an iOS real device, so can we. 
+If you can run it on an iOS real device, so can we. 
 
 ## Where to find out more
 
