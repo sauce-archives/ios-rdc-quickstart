@@ -89,7 +89,7 @@ The only difference is that instead of saying `"deviceName": "iPhone 6"`, you us
 
 And that's just about it. There isn't much that's different for a web test between platforms.
 
-The one thing to watch out for is that we haven't yet released [Sauce Connect](https://docs.saucelabs.com/reference/sauce-connect/) for iOS 
+The one thing to watch out for is that we haven't yet released [Sauce Connect](https://wiki.saucelabs.com/display/DOCS/Using+Sauce+Connect+for+Testing+Behind+the+Firewall+or+on+Localhost) for iOS 
 Real Devices. But it's on the way! Check with Sauce Labs for updates.
 
 ### App tests
@@ -131,7 +131,7 @@ Sauce Labs can accept your app in two formats.
   * A zipped `.app` directory, whose filename must end in `.zip`.
 
 The big difference from simulator tests is that you have to upload a real device iOS app to 
-[Sauce Storage](https://support.saucelabs.com/customer/portal/articles/2018312-uploading-apps-to-sauce-storage) first. And
+[Sauce Storage](https://wiki.saucelabs.com/display/DOCS/Using+Sauce+Storage+for+Test+Assets) first. And
 then, to test the app you just uploaded, use a `sauce-storage:` URL as the `app` property in the capabilities.
 
 For instance, if your app is called `your_app.zip`, you would upload it to Sauce Storage, and then in the capabilities for 
@@ -141,7 +141,7 @@ Sauce Storage is a convenient place to temporarily store files that your tests w
 transferring the file over to us for every test, you can just upload it to us once, in a secure, private area.
 
 If you want to upload the app yourself ahead of time, the `saucestorage` helper library, included here, could be of use. Or, 
-use a simple shell command with `curl`. See the [Sauce Storage API documentation](https://docs.saucelabs.com/reference/rest-api/#temporary-storage). 
+use a simple shell command with `curl`. See the [Sauce Storage API documentation](https://wiki.saucelabs.com/display/DOCS/Temporary+Storage+Methods). 
 
 If you write tests in Python, we've made it extra easy with the helpers in this package. `sauce_storage_upload("path/to/your_app.zip")` will upload 
 the file and return the correct `sauce-storage:` URL.
