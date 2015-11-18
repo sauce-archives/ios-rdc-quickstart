@@ -9,6 +9,27 @@ run your tests just like iOS simulators... almost.
 To get you started, we've put together some sample tests, with a sample app, that you can try -- right now --
 with your own Sauce Labs account.
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents** 
+
+- [Running the example tests](#running-the-example-tests)
+  - [Environment variables](#environment-variables)
+    - [Linux or Mac OS X users](#linux-or-mac-os-x-users)
+    - [Windows users](#windows-users)
+  - [Install test libraries](#install-test-libraries)
+  - [How to run the tests](#how-to-run-the-tests)
+- [How to write your own tests](#how-to-write-your-own-tests)
+  - [Web tests](#web-tests)
+  - [App tests](#app-tests)
+    - [Building](#building)
+    - [Uploading](#uploading)
+    - [Provisioning](#provisioning)
+- [Where to find out more](#where-to-find-out-more)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 ## Running the example tests
 
 Sauce Labs works with Selenium libraries in any language, but the examples here
