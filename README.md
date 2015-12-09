@@ -134,7 +134,7 @@ We can't go into a full discussion of how to compile iOS apps, but here are some
 * You can make a `.app` directory or an `.ipa`. (See the **Uploading** section).
 * If you are using Apple's development IDE, XCode, you will have to create a "scheme" which archives the application to a file. Then
   use that as your app file. Here's where to start in Apple's documentation: 
-  * [XCode Overview: Run Your App](https://developer.apple.com/library/ios/documentation/ToolsLanguages/Conceptual/Xcode_Overview/RunYourApp.html)_ 
+  * [XCode Overview: Building Your App](https://developer.apple.com/library/ios/documentation/ToolsLanguages/Conceptual/Xcode_Overview/BuildingYourApp.html) 
   * [XCode Help: Archiving Your Application](https://developer.apple.com/library/ios/recipes/xcode_help-scheme_editor/Articles/SchemeArchive.html) 
 * If you are building with the command-line tool, `xcodebuild`, the arguments should include:
 
